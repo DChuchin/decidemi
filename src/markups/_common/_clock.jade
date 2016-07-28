@@ -1,0 +1,18 @@
+.clock__container
+	-
+		var i=0
+	while (i < 10)
+		div(class="clock__body clock__body--"+ ++i data-number=(i+1))
+	.clock__list-wrapper.clearfix
+		ol.clock__list.clock__list--left
+			-
+				var items = ['professionalità', 'competenza', 'esperienza', 'concretezza', 'chiarezza']
+			each item, index in items
+				li(class="clock__item clock__item--" + (index+1))
+					h3.clock__title= item
+		ol(class="clock__list clock__list--right" start="6")
+			-
+				var items = ['riservatezza', 'sicurezza', 'indipendenza', 'fiducia', 'lungimiranza']
+			each item, index in items
+				li(class="clock__item clock__item--" + (index+6))
+					h3.clock__title= item

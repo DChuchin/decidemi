@@ -1,0 +1,25 @@
+footer.main-footer
+	.section__wrapper--footer
+		a(href="#" class="main-footer__logo")
+			img(src="commons/images/logo-small.png" alt="decidecimi")
+
+		span.main-footer__copyright
+			| &#169 DIECI DECIMI srl
+		.main-footer__contacts
+			span.main-footer__address
+				| Via San Primo, 4 - 20121 Milano
+			a(class="main-footer__phone" href="tel:+39 02 87348124")
+				| Tel. +39 02 87348124 - 
+			a(class="main-footer__fax" href="fax:+39 02 30468695")
+				| Fax: +39 02 30468695
+			span
+				| P.IVA / C.F / Reg. Imp. TV 1234567890
+			span
+				| REA TV 123456 -  Cap. soc. € 10.000 i.v. 
+		ul.footer-menu__list
+			-
+				var items = ['PRIVACY', 'COOKIE', 'Credits: Active 121']
+			each item in items
+				li.footer-menu__item
+					a(href="#" class="footer-menu__link" + (item == "PRIVACY" ? " footer-menu__link--privacy" : "") + (item == "Credits: Active 121" ? " footer-menu__link--credits" : ""))= item
+		.footer__btn-up

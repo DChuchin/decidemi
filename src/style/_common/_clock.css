@@ -1,0 +1,118 @@
+
+/*-------------- clock -------------*/
+.clock__container {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	width: 200px;
+	height: 242px;
+}
+.clock__body {
+	width: 200px;
+	height: 242px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	display: none;
+
+	&--1 {
+		display: block;
+		background:url('../img/sprite/clock-1.png') no-repeat 0 0
+	}
+	&--2 {
+		background:url('../img/sprite/clock-2.png') no-repeat 0 0
+	}
+	&--3 {
+		background:url('../img/sprite/clock-3.png') no-repeat 0 0
+	}
+	&--4 {
+		background:url('../img/sprite/clock-4.png') no-repeat 0 0
+	}
+	&--5 {
+		background:url('../img/sprite/clock-5.png') no-repeat 0 0
+	}
+	&--6 {
+		background:url('../img/sprite/clock-6.png') no-repeat 0 0
+	}
+	&--7 {
+		background:url('../img/sprite/clock-7.png') no-repeat 0 0
+	}
+	&--8 {
+		background:url('../img/sprite/clock-8.png') no-repeat 0 0
+	}
+	&--9 {
+		background:url('../img/sprite/clock-9.png') no-repeat 0 0
+	}
+	&--10 {
+		background:url('../img/sprite/clock-10.png') no-repeat 0 0
+	}
+
+}
+.clock__number {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	color: #ffffff;
+	font-size: 60px;
+	font-family: Montserrat, sans-serif;
+	font-weight: 700;
+}
+.clock__list {
+	margin: 0;
+	padding: 0;
+}
+.clock__item {
+	position: absolute;
+	font-family: Montserat, sans-sefif;
+	color:  #555559;
+	list-style: none;
+	text-transform: uppercase;
+	display: none;
+
+	&--1 {
+		display: block;
+		top: -55px;
+		right: 143px;
+	}
+	&--2 {
+		top: -55px;
+		left: 143px;
+	}
+	&--3 {
+		top: 15px;
+		left: 213px;
+	}
+	&--4 {
+		top: 91px;
+		left: 238px;
+	}
+	&--5 {
+		top: 167px;
+		left: 216px;
+	}
+	&--6 {
+		top: 233px;
+		left: 141px;
+	}
+	&--7 {
+		top: 233px;
+		right: 141px;
+	}
+	&--8 {
+		top: 167px;
+		right: 216px;
+	}
+	&--9 {
+		top: 91px;
+		right: 238px;
+	}
+	&--10 {
+		top: 15px;
+		right: 213px;
+	}
+}
+.clock__title {
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0;
+}

@@ -1,0 +1,17 @@
+ul.network__list
+	-
+		var n=0
+	while n<20
+		li(class="network__item "+ ++n)
+			.network__wrapper
+				.network__image-wrapper.network__image-wrapper--grayscale
+					img(class="network__image" src="commons/images/network1-grayscale.jpg")
+				.network__content
+					a(class="network__link" href="#")
+					.network__image-wrapper
+						img(class="network__image network__image--hover" src="commons/images/network1-color.jpg")
+					.network__underline
+					h4.network__title
+						| Sottotitolo
+					.network__text
+						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur, aliquam, doloribus possimus atque nihil dolores accusamus. Doloribus aperiam, laboriosam!

@@ -1,0 +1,39 @@
+.mission {
+	margin: 0 auto;
+	max-width: 950px;
+}
+.mission__block {
+	vertical-align: top;
+	display: inline-block;
+	text-align: center;
+	width: 32%;
+	margin-bottom: 50px;
+}
+.mission__icon {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	margin-bottom: 32px;
+
+
+	&--family {
+		background:url('../img/sprite/family.png') no-repeat 0 0;
+	}
+
+	&--money {
+		background:url('../img/sprite/graph.png') no-repeat 0 0;
+	}
+
+	&--buisness {
+		background:url('../img/sprite/plant.png') no-repeat 0 0;
+	}
+}
+
+.mission__title {
+	margin: 0;
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	color:  #242426;
+	font-size: 16px;
+	font-weight: 400;
+}

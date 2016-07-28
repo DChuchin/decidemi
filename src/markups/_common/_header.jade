@@ -1,0 +1,56 @@
+header.main-header#0
+	.cookie-bar__wrapper
+		.cookie-bar
+			.cookie-bar__icon
+			.cookie-bar__content.clearfix
+				| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+			a(href="#" class="cookie-bar__link")
+				| politica dei cookie
+			button.cookie-bar__close-button
+	.header__container
+		.header__wrapper.clearfix
+			.header__logo-container.clearfix
+				a(class="header__logo--mobile--stuck" href="index.html")
+					img(class="header__logo--mobile--stuck" src="commons/images/logo-small-stuck.png" alt="diecidecimi")
+				a(class="header__logo--mobile" href="index.html")
+					img(class="header__logo--mobile" src="commons/images/logo-mobile.png" alt="diecidecimi")
+				a(class="header__logo--mobile--small" href="index.html")
+					img(class="header__logo--mobile--small" src="commons/images/logo-small-mobile.png" alt="diecidecimi")
+				a(class="header__logo--small" href="index.html")
+					img(class="header__logo--small" src="commons/images/logo-small-blue.png" alt="diecidecimi")
+				.header__logo
+					a(class="header__logo-link" href="index.html" class="header__logo-link")
+						img(src="commons/images/logo1.png" alt="decidecimi")
+					img(src="commons/images/logo-shadow.png", width="850px" class="logo-shadow")
+			.header__menu-wrapper
+				.header__contacts
+					a(class="header__phone" href="tell:+390287348124")
+						span.header__phone-number
+							|+39 02 87348124
+						.header__phone-icon
+					a(class="header__mail" href="mailto:")
+					label.header__language
+						select
+							-
+								var langs = ['English', 'Italian', 'Deutch']
+							each lang in langs
+								option= lang
+				a(class="mobile-menu" href="#")
+					.mobile-menu__line.mobile-menu__line--1
+					.mobile-menu__line.mobile-menu__line--2
+					.mobile-menu__line.mobile-menu__line--3
+				.main-menu__wrapper
+					ul.main-menu
+						-
+							var items = ['HOME','Valori', 'Bisogni e Soluzioni', 'Esperti', 'Contatti']
+						each item, index in items
+							li(class="main-menu__item " + ((index == items.length - 1) ? "main-menu__item--last" : "") + ((item == 'HOME') ? "main-menu__item--home" : ""))
+								a(class="main-menu__link" href="#" + index)= item
+								if (index !== items.length -1)
+									.main-menu__slash
+						ul.header__language--mobile
+							-
+								var langs = ['ENGLISH', 'ILALIAN']
+							each lang in langs
+								li(class="header__language-item " + (lang == 'ENGLISH' ? 'checked' : ""))
+									a(href="#" class="header__language-link")= lang

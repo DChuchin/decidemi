@@ -1,0 +1,42 @@
+.experts
+	div(class="experts__profile-item experts__profile-item--blank clearfix")
+		.experts__photo-wrapper.experts__photo-wrapper--profile
+			img(class="experts__photo" src="commons/images/head.jpg")
+		.experts__content
+			.experts__name-container
+				.experts__name
+					| I Tuoi esperti
+			.experts__underline
+			.experts__about
+				| Siamo un gruppo di professionisti con competenze ed esperienze, umane e professionali, diversificate e consolidate nel tempo. Ci accomuna una grande voglia di lavorare insieme, per rendere la nostra diversità un valore aggiunto per i Clienti, e siamo profondamente appassionati al nostro lavoro.
+	ul.experts__profile-list
+		-
+			var i=0
+		while (++i<19)
+			li(class="experts__profile-item clearfix" data-number=i)
+				.experts__photo-wrapper.experts__photo-wrapper--profile
+					img(class="experts__photo" src="commons/images/people1-big.jpg")
+				.experts__content
+					.experts__name-container
+						.experts__name= i
+							| Cinzia D'Agostino
+						.experts__position
+							| Amministratore e consulente
+					.experts__underline
+					.experts__about
+						| Il mio lavoro è aiutare le persone e le organizzazioni a cambiare per raggiungere i propri obiettivi. Ho 25 anni di esperienza professionale nel campo della pianificazione strategica, dello sviluppo organizzativo e del project management. Nel mio lavoro cerco sempre di far vedere ai miei Clienti le diverse opportunità che hanno per risolvere i loro problemi. Amo le persone costruttive, coraggiose, determinate, concrete, chiare e cerco di essere una di loro.Il motto personale cui mi ispiro nel mio lavoro in Dieci decimi è: “Tutto quello che ha valore per i miei Clienti è un bene da rispettare, proteggere, sviluppare”.
+	.experts__carousel
+		.experts__btn.experts__btn--prev
+		.experts__btn.experts__btn--next
+		ul.experts__list
+			-
+				var i=0
+			while (++i<19)
+				li(class="experts__item" data-number=i-1)
+					.experts__photo-wrapper--carousel.experts__photo-wrapper
+						img(class='experts__photo' src="commons/images/people1.jpg")
+					.experts__info--hover
+						.experts__photo-wrapper--hover
+							img(class='experts__photo--hover' src="commons/images/people-hover.jpg")
+						.experts__name--hover
+							| Cinzia D’Agostino

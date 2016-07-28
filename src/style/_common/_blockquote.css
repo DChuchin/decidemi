@@ -1,0 +1,39 @@
+/*--------- blockquote -------------*/
+.blockquote {
+	background-color:  #2e7de1;
+	width: 100%;
+	min-height: 199px;
+	text-shadow: 0px 0px 2.91px black;
+	color:  #ffffff;
+	font-family: Montserrat, sans-serif;
+}
+.blockquote__wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 60px 30px;
+}
+.blockquote__text {
+	font-size: 40px;
+	line-height: 44px;
+	font-weight: 400;
+	margin: 0;
+	letter-spacing: -1.35px;
+}
+.blockquote__body {
+}
+.blockquote__quote {
+	vertical-align: top;
+	font-size: 74px;
+	&--open {
+		left: -20px;
+	}
+	&--close {
+		right: -20px;
+	}
+}
+.blockquote__cite {
+	float: right;
+	font-size: 27px;
+	margin-right: 105px;
+	letter-spacing: -0.5px;
+}

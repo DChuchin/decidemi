@@ -1,0 +1,55 @@
+.privacy-popup__body {
+	padding: 20px 40px 50px 20px;
+	position: relative;
+	border-radius: 6px;
+	background: #ffffff;
+	color:  #555559;
+	max-width: 1076px;
+	max-height: 100%;
+	overflow-x: hidden;
+	top:50%;
+	transform: translateY(-50%);
+
+	button.mfp-close {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		right: 18px;
+		top: 15px;
+		color: transparent;
+		background: url('../img/sprite/cross.png') no-repeat 0 0;
+	}
+}
+.privacy-popup__main-title {
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: underline;
+	margin-bottom: 30px;
+}
+.privacy-popup__title {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1.5;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.privacy-popup__content {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+
+	span {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+}
+
+.mfp-iframe-holder .mfp-content {
+	height: 100%;
+}
+.mfp-container.mfp-iframe-holder {
+	padding: 10px;
+}
+

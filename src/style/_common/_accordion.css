@@ -1,0 +1,115 @@
+/*------------------ accordion ---------------------*/
+.accordion__list {
+	max-width: 1060px;
+	text-align: left;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+}
+.accordion__item {
+	border-bottom: 1px solid #ffffff;
+	background: #f3f3f4;
+
+}
+.accordion__element {
+	position: relative;
+	padding: 22px 12px 22px 81px;
+	width: 100%;
+	min-height: 71px;
+	background: #2e7de1;
+	font-family: Montserrat, sans-serif;
+	color:  #ffffff;
+	font-size: 24px;
+	line-height: 27px;
+	font-weight: 400;
+	letter-spacing: -0.58px;
+	cursor: pointer;
+
+	&:hover {
+		.accordion__title {
+			top: -10px;
+		}
+		.accordion__arrow {
+			opacity: 1;
+			visibility: visible;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+		}
+	}
+}
+.accordion__number {
+	position: absolute;
+	top: 48%;
+	left: 14px;
+	transform: translateY(-50%);
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	text-align: center;
+	padding-top: 4px;
+}
+.accordion__title {
+	position: relative;
+	top: 0;
+	display: inline-block;
+	transition: top 0.5s ease;
+}
+.accordion__arrow {
+	position: absolute;
+	cursor: pointer;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -9px;
+	width: 18px;
+	height: 16px;
+	margin: 0 auto;
+	background: url('../img/sprite/arrow-down-small.png') no-repeat 0 0;
+	opacity: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	visibility: hidden;
+	transition: opacity 0.5s ease;
+}
+.accordion__content-wrapper {
+	display: none;
+	padding: 40px 23px 60px;
+	font-family: "Roboto Slab", serif;
+	color:  #555559;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 18px;
+
+	span {
+		display: inline-block;
+		font-weight: 300;
+	}
+
+	strong {
+		font-weight: 700;
+	}
+}
+.accordion__content--leftside {
+	float: left;
+	width: 41%;
+	padding-right: 45px;
+	border-right: 1px solid gray;
+
+	span {
+		margin-bottom: 18px;
+	}
+}
+.accordion__content--rightside {
+	float: right;
+	position: relative;
+	left: -1px;
+	padding-left: 45px;
+	width: 59%;
+	margin-left: -1px;
+	border-left: 1px solid gray;
+}
+.accordion__element-title {
+	font-size: 14px;
+	margin: 0;
+	text-transform: uppercase;
+	margin-bottom: 18px;
+}
