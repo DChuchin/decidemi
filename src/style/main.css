@@ -1,3 +1,11 @@
+@import "_vendor/normalize";
+
+@import "_vendor/jquery.formstyler.css";
+
+@import "_vendor/magnific-popup.css";
+
+@import "_vendor/slick.css";
+
 @import "_misc/adjustment";
 
 @import "_common/header";
@@ -27,3 +35,5 @@
 @import "_misc/animate";
 
 @import "_common/responsive";
+
+@import "_common/ie8.css";

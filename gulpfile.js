@@ -6,12 +6,15 @@ var
     autoprefixer = require('autoprefixer'),
     postcss      = require('gulp-postcss'),
     precss       = require('precss'),
+    cssnano      = require('cssnano'),
     sprites      = require('postcss-sprites').default;
     plumber      = require('gulp-plumber'),
     imageMin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
     stylefmt     = require('stylefmt'),
+    uglify       = require('gulp-uglify'),
     concat       = require('gulp-concat'),
+    rename       = require('gulp-rename'),
     browserSync  = require('browser-sync').create();
 
 /*------------------------ paths --------------------------*/
@@ -41,7 +44,9 @@ var
 
         js : {
             location    : 'src/script/*.js',
-            destination : 'websitestructure/commons/js/'
+            destination : 'websitestructure/commons/js/',
+            plugins     : 'src/script/vendor/**/*.js',
+            pluginsDest : 'websitestructure/commons/js/vendor/'
         },
 
         browserSync : {
@@ -80,13 +85,15 @@ gulp.task('style', function () {
                 spritePath: paths.img.destination
             }),
             autoprefixer({browsers : [ '> 1%', 'last 2 versions', 'ie >= 7']}),
-            stylefmt()
+            stylefmt(),
+            cssnano()
     ];
     gulp.src(paths.css.compiled)
         .pipe(plumber())
         .pipe(postcss(processors))
-        .pipe(gulp.dest(paths.css.destination))
+        .pipe(gulp.dest(paths.css.destination));
 });
+
 
 /*---------------------- images ---------------------------*/
 
@@ -95,16 +102,25 @@ gulp.task('img-min', function() {
         .pipe(imageMin({
             use:[pngquant({quality: '65-80'})]
         }))
-        .pipe(gulp.dest(paths.img.destination))
-    });
+        .pipe(gulp.dest(paths.img.destination));
+});
 
 /*-------------------- js --------------------*/
 
 gulp.task('js', function() {
     gulp.src(paths.js.location)
+        .pipe(plumber())
         .pipe(concat('main.js'))
-        .pipe(gulp.dest(paths.js.destination))
-})
+        .pipe(uglify())
+        .pipe(rename('main.min.js'))
+        .pipe(gulp.dest(paths.js.destination));
+});
+
+/*------------------- plugins -----------------------------*/
+gulp.task('plugins', function () {
+    gulp.src(paths.js.plugins)
+        .pipe(gulp.dest(paths.js.pluginsDest));
+});
 
 /*---------------- clean ------------*/
 
@@ -141,4 +157,4 @@ gulp.task('watch', function() {
     gulp.watch(paths.browserSync.watchPaths).on('change', browserSync.reload);
 });
 
-gulp.task('default', ['jade', 'style', 'js', 'img-min', 'watch', 'sync']);
+gulp.task('default', ['jade', 'style', 'js', 'plugins', 'img-min', 'watch', 'sync']);

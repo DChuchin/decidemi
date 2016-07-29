@@ -1,0 +1,101 @@
+.lt-ie9 .accordion__number {
+	margin-top: -20px;
+	zoom: 1;
+	*display: inline;
+}
+.lt-ie9 .accordion__titile,
+.lt-ie9 .main-footer__contacts,
+.lt-ie9 .main-footer__logo,
+.lt-ie9 .cookie-bar__content,
+.lt-ie9 .cookie-bar__link,
+.lt-ie9 .header__language,
+.lt-ie9 .main-menu__item,
+.lt-ie9 .main-menu__slash,
+.lt-ie9 .mission__block,
+.lt-ie9 .network__item,
+.lt-ie9 .network__wrapper,
+.lt-ie9 .network__image-wrapper,
+.lt-ie9 .project-elements__item,
+.lt-ie9 .header__phone-number,
+.lt-ie9 .header__phone-icon{
+	zoom: 1;
+	*display: inline;
+}
+.lt-ie9 .accordion__content--leftside,
+.lt-ie9 .header__menu-wrapper,
+.lt-ie9 .contacts-formm,
+.lt-ie9 .accordion__content--rightside,
+.lt-ie9 .blockquote__cite,
+.lt-ie9 .contacts-form__button,
+.lt-ie9 .experts__photo-wrapper--profile,
+.lt-ie9 .expert__content,
+.lt-ie9 .mission__block--family,
+.lt-ie9 .mission__block--buisness {
+	zoom: 1;
+}
+.lt-ie9 .contacts-form__input--checkbox{
+	display: inline;
+}
+.lt-ie9 .contacts-form__checkbox-elem,
+.lt-ie9 .header__language:after,
+.lt-ie9 .header__language:before {
+	display: none;
+}
+.lt-ie9 .experts__photo{
+	top: 0;
+	left: 0;
+}
+.lt-ie9 .owl-item {
+	visibility: hidden;
+}
+.lt-ie9 .owl-item.active {
+	visibility: visible;
+}
+.lt-ie9 .network__image{
+	top: -50%;
+	left: 0;
+}
+.lt-ie9 .cookie-bar {
+	border: 1px solid gray;
+}
+.lt-ie8 .cookie-bar__wrapper {
+	width: 90%;
+}
+.lt-ie9 .network__content {
+	margin-top: -1;
+	margin-left: -1px;
+	border: 1px solid gray;
+}
+.lt-ie9 .jq-selectbox__trigger-arrow {
+	border: 5px solid transparent;
+	border-top: 5px solid #2A7DE2;
+}
+.lt-ie9 .jq-selectbox:hover .jq-selectbox__trigger-arrow {
+	border-top-color: #4489e4;
+}
+.lt-ie9 .parallax__text {
+	top: 30%;
+}
+.lt-ie9 .parallax__img img {
+	width: 100%;
+}
+.lt-ie9 .clone {
+	border-bottom: 1px solid gray;
+}
+.lt-ie8 .parallax__wrapper {
+	z-index: -1;
+}
+.lt-ie8 .main-menu__item--home {
+	display: none;
+}
+.lt-ie8 .mission__block {
+	float: left;
+	margin-right: 30px;
+}
+.lt-ie8 .mission__block--buisness{
+	float: left;
+	margin-right: 0;
+}
+.lt-ie8 .project-elements__item {
+	width: 30%;
+}
