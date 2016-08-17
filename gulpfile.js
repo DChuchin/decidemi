@@ -50,8 +50,8 @@ var
         },
 
         browserSync : {
-            baseDir    : 'websitestructure/',
-            watchPaths : ['websitestructure/**/*.html', 'websitestructure/commons/css/**/*.css', 'websitestructure/commons/js/**/*.js' ]
+            baseDir    : './websitestructure/',
+            watchPaths : ['./websitestructure/*.html', './websitestructure/commons/css/*.css', './websitestructure/commons/js/*.js' ]
         }
     }
 /*-------------------------- jade ------------------------------*/
